@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <ul>
+     <% for(var messg of messages) { %>
+     	<li>
+     	 <%= messg.user %> <br>	
+     	 <%= messg.text %> <br>
+     	 <%= messg.added %> <br>     	 
+     	</li>
+     	<hr>
+     <% } %>    	
+    </ul>
+    <a href="/new">add new message</a>
+
+  </body>
+</html>
